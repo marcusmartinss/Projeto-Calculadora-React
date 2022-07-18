@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica;
+}
+  
+body {
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3em;
+}
+  
+button {
+    border: 1px solid transparent;
+    /* define uma borda sólida e transparente de 1px */
+    border-radius: 0;
+    height: 4em;
+    font-size: 1.2em;
+    background-color: #DBDBDB;
+    cursor: pointer;
+    /* quando o mouse estiver em cima do botão, */
+    /* ele mudará de forma para a mão apontando */
+}
+  
+button:hover {
+    background-color: #BABABA;
+    border-color: #999;
+    /* agora, o botão que antes tinha borda transparente */
+    /* receberá cor na borda quando o mouse passar por   */
+    /* cima dele, também mudando de cor de fundo         */
+}
+  
+.calc {
+    width: 400px;
+    padding: .5em;
+    background-color: #C4C4C4;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    /* os itens flexíveis são disponibilizados verticalmente */
+}
+
+.calc h3 {
+    font-size: .8em;
+    font-weight: 300;
+    color: #666;
+}
+
+.operation {
+    border: 1px solid transparent;
+    border-radius: 0;
+    height: 4em;
+    font-size: 1.2em;
+    background-color: #C4C4C4;
+    cursor: pointer;
+}
+
+.operations {
+    text-align: right ;
+}
+
+.previous-operation,
+.current-operation {
+    min-height: 1.6em;
+    padding: .2em;
+    overflow-wrap: break-word;
+    /* quebra de linha quando atingir a borda */
+}
+
+.previous-operation {
+    color: #777;
+}
+
+.current-operation {
+    font-size: 3em;
+    font-weight: 700;
+}
+
+.equal-btn {
+    grid-column: span 2;
+    /* faz com que o elemento receba o espaço de dois */
+    /* elementos em uma linha, aumentando seu tamanho */
+    background-color: #75A5CB;
+}
+
+.equal-btn:hover {
+    background-color: #3A91D8;
+}
+
+.number {
+    background-color: #F3F3F3;
+}
+
+.buttons-container {
+    display: grid;
+    /* permite disponibilizar elementos */
+    /* html em uma grade de blocos */
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /* cria um template de 4 colunas com mesma proporção */
+    gap: 3px;
+    /* gera um espaçamento de 3 pixels para todos elementos */
+    /* em todas as direções */
+}
