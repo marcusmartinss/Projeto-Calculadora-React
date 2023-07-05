@@ -5,7 +5,7 @@ import { Calculator } from './components/Calculator';
 function App() {
   return (
     <Fragment>
-      <Calculator/>
+      <Calculator />
     </Fragment>
   );
 }
